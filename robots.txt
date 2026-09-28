@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aidenmvb.github.io/charlotte-pet-podcast/sitemap.xml
