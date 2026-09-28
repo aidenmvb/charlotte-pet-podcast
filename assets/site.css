@@ -79,6 +79,10 @@ a:hover {
 }
 
 .mast {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--sheet);
   border-bottom: 1px solid var(--ink);
 }
 
@@ -86,7 +90,7 @@ a:hover {
 .foot .wrap {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   gap: 0.8rem 1.5rem;
   padding-bottom: 1rem;
