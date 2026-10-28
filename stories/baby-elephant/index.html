@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>A baby elephant at the National Zoo · Charlotte's Pet Podcast</title>
+    <title>A baby elephant at the National Zoo · Charlotte’s Pet Podcast</title>
     <meta
       name="description"
-      content="Charlotte's visit with a baby elephant at the National Zoo, and a closer look at the people who care for zoo animals."
+      content="Charlotte’s visit with a baby elephant at the National Zoo, and a closer look at the people who care for zoo animals."
     />
     <meta property="og:title" content="A baby elephant at the National Zoo" />
     <meta
       property="og:description"
-      content="Charlotte's visit with the baby elephant and a closer look at the people who care for zoo animals."
+      content="Charlotte’s visit with a baby elephant, and the people who care for zoo animals."
     />
     <meta property="og:type" content="article" />
     <meta name="theme-color" content="#f3eee6" />
@@ -22,15 +22,21 @@
     <a class="skip" href="#content">Skip to content</a>
     <header class="mast">
       <div class="inner mast-inner">
-        <div class="brand-block">
-          <a class="brand" href="../../">Charlotte's Pet Podcast</a>
-          <p class="tag">A growing collection of animal stories.</p>
-        </div>
-        <nav class="nav" aria-label="Site">
+        <a class="brand" href="../../">Charlotte’s Pet Podcast</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="nav-toggle-open">Menu</span>
+          <span class="nav-toggle-close">Close</span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Site">
           <a href="../../">Home</a>
-          <a href="../">Stories</a>
+          <a href="../" aria-current="page">Stories</a>
           <a href="../../places/">Places</a>
-          <a href="../../lemonade/">Lemonade</a>
+          <a href="../../lemonade/">Lemonade Society</a>
           <a href="../../about/">About Charlotte</a>
         </nav>
       </div>
@@ -38,85 +44,97 @@
     <main id="content" tabindex="-1">
       <article>
         <div class="inner piece">
-        <header class="piece-head tone-teal">
-          <p class="back"><a href="../">← Stories</a></p>
-          <p class="kicker">Field notes · Wildlife</p>
-          <h1>A baby elephant at the National Zoo</h1>
-          <p class="dek">
-            Charlotte's visit with the baby elephant and a closer look at the
-            people who care for zoo animals.
-          </p>
-          <p class="meta-line">
-            <span>The National Zoo</span>
-            <span>A baby elephant</span>
-            <span>The people who care for zoo animals</span>
-            <span>Photos not added yet</span>
-          </p>
-          <p class="share">
-            <button type="button" class="copy" data-copy-link>Copy link to this story</button>
-            <span class="copy-status" role="status"></span>
-          </p>
-        </header>
-        <div class="prose">
-          <h2>What this story is</h2>
-          <p>
-            This one is a visit, not a sit-down interview. Charlotte went to
-            see a baby elephant at the National Zoo, and to look at the work of
-            the people who care for the animals there. The photos from that
-            visit will go on this page.
-          </p>
-          <p>
-            The elephant's name is not on the site yet. It will be added with
-            the photos if Charlotte has it. These notes do not describe the
-            visit as if it had already been written up.
-          </p>
-          <h2>Questions for the field notes</h2>
-          <ol class="questions">
-            <li>What does a baby elephant need from the people who look after it?</li>
-            <li>What does that work look like on an ordinary day?</li>
-            <li>What did Charlotte notice on the visit?</li>
-          </ol>
-          <figure class="frame" id="visit-photos">
-            <p class="label">Photos</p>
-            <p>
-              Charlotte's own photos will be added here. None are on the site
-              yet.
+          <p class="back"><a href="../">All stories</a></p>
+          <header class="story-head">
+            <p class="eyebrow">The zoo</p>
+            <h1>A baby elephant at the National Zoo</h1>
+            <p class="dek">
+              Charlotte’s visit to see a baby elephant at the National Zoo, and
+              the people who care for the animals there.
             </p>
+            <p class="status">Story in progress</p>
+            <p class="share">
+              <button type="button" class="copy" data-copy-link>Copy link</button>
+              <span class="copy-status" role="status"></span>
+            </p>
+          </header>
+          <figure class="story-figure">
+            <img
+              src="../../assets/art/baby-elephant.jpg"
+              width="1248"
+              height="832"
+              alt="Illustration of a young elephant standing in a leafy grove."
+            />
+            <figcaption>Illustrative artwork. Not a photograph from the zoo.</figcaption>
           </figure>
-        </div>
-        </div>
-        <section class="more" aria-labelledby="more-heading">
-          <div class="inner">
-            <h2 id="more-heading">The other stories</h2>
+          <div class="prose">
+            <h2>The story so far</h2>
+            <p>
+              This one is a visit, not a sit-down interview. Charlotte went to
+              the National Zoo to see a baby elephant and to look at the work
+              of the people who care for the animals there. The place is
+              <a href="../../places/#zoo">the zoo</a>.
+            </p>
+            <p>
+              The elephant’s name is not on the site yet. It can be added with
+              Charlotte’s photos if she has it. This page does not describe the
+              visit as if those notes were already finished.
+            </p>
+            <p class="note">Charlotte’s photos from the visit are not on this page yet.</p>
+            <h2>What Charlotte is curious about</h2>
+            <p>These are things she wants to learn. They are not a write-up of the visit.</p>
+            <ol class="questions">
+              <li>What does a baby elephant need from the people who look after it?</li>
+              <li>What does that work look like on an ordinary day?</li>
+              <li>What did Charlotte notice on the visit?</li>
+            </ol>
           </div>
-          <ol class="index index-short">
-            <li>
-              <a class="row tone-clay" href="../martha-wunder/">
-                <span class="kind">Interview</span>
-                <span class="name">Meet horse trainer Martha Wunder</span>
+        </div>
+        <section class="related" aria-labelledby="more-heading">
+          <div class="inner">
+            <h2 id="more-heading">More stories</h2>
+            <div class="related-grid">
+              <a class="related-card" href="../martha-wunder/">
+                <img
+                  src="../../assets/art/horse-barn.jpg"
+                  width="1248"
+                  height="832"
+                  alt=""
+                />
+                <p class="eyebrow">Horse training</p>
+                <h3>Meet horse trainer Martha Wunder</h3>
+                <span class="text-link">Read the story</span>
               </a>
-            </li>
-            <li>
-              <a class="row tone-honey" href="../puppies/">
-                <span class="kind">At home</span>
-                <span class="name">Meet the puppies</span>
+              <a class="related-card" href="../puppies/">
+                <img
+                  src="../../assets/art/puppies.jpg"
+                  width="1248"
+                  height="832"
+                  alt=""
+                />
+                <p class="eyebrow">At home</p>
+                <h3>Meet the puppies</h3>
+                <span class="text-link">Read the story</span>
               </a>
-            </li>
-          </ol>
+            </div>
+          </div>
         </section>
       </article>
     </main>
     <footer class="foot">
       <div class="inner foot-inner">
         <div>
-          <p class="foot-name">Charlotte's Pet Podcast</p>
-          <p class="sub">A growing collection of animal stories.</p>
+          <p class="foot-name">Charlotte’s Pet Podcast</p>
+          <p class="blurb">
+            Charlotte’s questions for the people who care for animals, and the
+            animals she meets along the way.
+          </p>
         </div>
         <nav class="nav" aria-label="Footer">
           <a href="../../">Home</a>
           <a href="../">Stories</a>
           <a href="../../places/">Places</a>
-          <a href="../../lemonade/">Lemonade</a>
+          <a href="../../lemonade/">Lemonade Society</a>
           <a href="../../about/">About Charlotte</a>
         </nav>
       </div>

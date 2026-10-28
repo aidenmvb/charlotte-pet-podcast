@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stories · Charlotte's Pet Podcast</title>
+    <title>Stories · Charlotte’s Pet Podcast</title>
     <meta
       name="description"
-      content="Three stories planned for Charlotte's Pet Podcast: horse trainer Martha Wunder, a baby elephant at the National Zoo, and three puppies at home."
+      content="Meet the animals and people behind Charlotte’s first stories—from horses at the barn to a baby elephant at the zoo and puppies at home."
     />
-    <meta property="og:title" content="Stories · Charlotte's Pet Podcast" />
+    <meta property="og:title" content="Stories · Charlotte’s Pet Podcast" />
     <meta
       property="og:description"
-      content="Charlotte's interviews and animal adventures are being gathered for the first episodes."
+      content="Three stories in progress: Martha Wunder and the horses, a baby elephant at the National Zoo, and puppies at home."
     />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#f3eee6" />
@@ -22,60 +22,89 @@
     <a class="skip" href="#content">Skip to content</a>
     <header class="mast">
       <div class="inner mast-inner">
-        <div class="brand-block">
-          <a class="brand" href="../">Charlotte's Pet Podcast</a>
-          <p class="tag">A growing collection of animal stories.</p>
-        </div>
-        <nav class="nav" aria-label="Site">
+        <a class="brand" href="../">Charlotte’s Pet Podcast</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="nav-toggle-open">Menu</span>
+          <span class="nav-toggle-close">Close</span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Site">
           <a href="../">Home</a>
           <a href="./" aria-current="page">Stories</a>
           <a href="../places/">Places</a>
-          <a href="../lemonade/">Lemonade</a>
+          <a href="../lemonade/">Lemonade Society</a>
           <a href="../about/">About Charlotte</a>
         </nav>
       </div>
     </header>
     <main id="content" tabindex="-1">
-      <div class="banner">
+      <header class="page-intro">
         <div class="inner">
-          <header class="page-head">
-            <h1>Stories</h1>
-            <p class="dek">
-              Charlotte's interviews and animal adventures are being gathered for
-              the first episodes. These are the stories planned for the site.
-              They can be read in any order.
-            </p>
-          </header>
+          <p class="eyebrow">In progress</p>
+          <h1>Stories</h1>
+          <p class="dek">
+            Meet the animals and people behind Charlotte’s first stories—from
+            horses at the barn to a baby elephant at the zoo and puppies at
+            home.
+          </p>
         </div>
-      </div>
+      </header>
       <div class="inner page">
-        <div class="cards">
-          <a class="card tone-clay" href="martha-wunder/">
-            <p class="kind">Interview · Horse training</p>
-            <h3>Meet horse trainer Martha Wunder</h3>
+        <div class="story-grid">
+          <a class="story-card" href="martha-wunder/">
+            <img
+              src="../assets/art/horse-barn.jpg"
+              width="1248"
+              height="832"
+              alt="Illustration of a chestnut horse standing in a wooden barn."
+            />
+            <p class="art-note">Illustrative artwork.</p>
+            <p class="eyebrow">Horse training</p>
+            <h2>Meet horse trainer Martha Wunder</h2>
             <p class="sum">
-              Charlotte's conversation with a horse trainer about working with
-              horses, including her visit to check on Crispy.
+              Charlotte is talking with Martha Wunder about working with
+              horses. The story includes her visit to check on Crispy.
             </p>
-            <span class="go">Open story</span>
+            <p class="status">Story in progress</p>
+            <span class="text-link">Read the story</span>
           </a>
-          <a class="card tone-teal" href="baby-elephant/">
-            <p class="kind">Field notes · Wildlife</p>
-            <h3>A baby elephant at the National Zoo</h3>
+          <a class="story-card" href="baby-elephant/">
+            <img
+              src="../assets/art/baby-elephant.jpg"
+              width="1248"
+              height="832"
+              alt="Illustration of a young elephant standing in a leafy grove."
+            />
+            <p class="art-note">Illustrative artwork.</p>
+            <p class="eyebrow">The zoo</p>
+            <h2>A baby elephant at the National Zoo</h2>
             <p class="sum">
-              Charlotte's visit with the baby elephant and a closer look at the
-              people who care for zoo animals.
+              Charlotte visited the National Zoo to see a baby elephant and
+              learn about the people who care for the animals.
             </p>
-            <span class="go">Open story</span>
+            <p class="status">Story in progress</p>
+            <span class="text-link">Read the story</span>
           </a>
-          <a class="card tone-honey" href="puppies/">
-            <p class="kind">At home · Puppies</p>
-            <h3>Meet the puppies</h3>
+          <a class="story-card" href="puppies/">
+            <img
+              src="../assets/art/puppies.jpg"
+              width="1248"
+              height="832"
+              alt="Illustration of three puppies resting together by a window."
+            />
+            <p class="art-note">Illustrative artwork.</p>
+            <p class="eyebrow">At home</p>
+            <h2>Meet the puppies</h2>
             <p class="sum">
-              Follow three tiny puppies as they grow, play, and discover the
-              world around them.
+              Three very young puppies at home, growing and playing as they
+              discover what is around them.
             </p>
-            <span class="go">Open story</span>
+            <p class="status">Story in progress</p>
+            <span class="text-link">Read the story</span>
           </a>
         </div>
       </div>
@@ -83,17 +112,21 @@
     <footer class="foot">
       <div class="inner foot-inner">
         <div>
-          <p class="foot-name">Charlotte's Pet Podcast</p>
-          <p class="sub">A growing collection of animal stories.</p>
+          <p class="foot-name">Charlotte’s Pet Podcast</p>
+          <p class="blurb">
+            Charlotte’s questions for the people who care for animals, and the
+            animals she meets along the way.
+          </p>
         </div>
         <nav class="nav" aria-label="Footer">
           <a href="../">Home</a>
           <a href="./" aria-current="page">Stories</a>
           <a href="../places/">Places</a>
-          <a href="../lemonade/">Lemonade</a>
+          <a href="../lemonade/">Lemonade Society</a>
           <a href="../about/">About Charlotte</a>
         </nav>
       </div>
     </footer>
+    <script src="../assets/site.js"></script>
   </body>
 </html>

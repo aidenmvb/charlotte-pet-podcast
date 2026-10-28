@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Places · Charlotte's Pet Podcast</title>
+    <title>Places · Charlotte’s Pet Podcast</title>
     <meta
       name="description"
-      content="Charlotte's stories move from the barn to the National Zoo to home: horses with Martha Wunder, a baby elephant, and three puppies."
+      content="Charlotte’s stories move from the barn to the National Zoo to home: horses with Martha Wunder, a baby elephant, and three puppies."
     />
-    <meta property="og:title" content="Places · Charlotte's Pet Podcast" />
+    <meta property="og:title" content="Places · Charlotte’s Pet Podcast" />
     <meta
       property="og:description"
-      content="From the barn to the zoo to her own home."
+      content="The barn, the zoo, and home. Each place leads to one of Charlotte’s stories."
     />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#f3eee6" />
@@ -22,77 +22,123 @@
     <a class="skip" href="#content">Skip to content</a>
     <header class="mast">
       <div class="inner mast-inner">
-        <div class="brand-block">
-          <a class="brand" href="../">Charlotte's Pet Podcast</a>
-          <p class="tag">A growing collection of animal stories.</p>
-        </div>
-        <nav class="nav" aria-label="Site">
+        <a class="brand" href="../">Charlotte’s Pet Podcast</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="nav-toggle-open">Menu</span>
+          <span class="nav-toggle-close">Close</span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Site">
           <a href="../">Home</a>
           <a href="../stories/">Stories</a>
           <a href="./" aria-current="page">Places</a>
-          <a href="../lemonade/">Lemonade</a>
+          <a href="../lemonade/">Lemonade Society</a>
           <a href="../about/">About Charlotte</a>
         </nav>
       </div>
     </header>
     <main id="content" tabindex="-1">
-      <div class="banner">
+      <header class="page-intro">
         <div class="inner">
-          <header class="page-head">
-            <h1>Places</h1>
-            <p class="dek">
-              From the barn to the zoo to her own home. Each place is one of
-              the stories.
-            </p>
-          </header>
+          <p class="eyebrow">Where the stories happen</p>
+          <h1>Places</h1>
+          <p class="dek">
+            The barn, the zoo, and home. Each place leads to one of Charlotte’s
+            stories.
+          </p>
         </div>
-      </div>
-      <div class="inner page">
-        <div class="place-list">
-          <a class="place tone-clay" href="../stories/martha-wunder/">
-            <p class="kind">The barn</p>
-            <h2>Meet horse trainer Martha Wunder</h2>
-            <p>
-              Charlotte's conversation with a horse trainer about working with
-              horses, including her visit to check on Crispy.
-            </p>
-            <span class="go">Open story</span>
-          </a>
-          <a class="place tone-teal" href="../stories/baby-elephant/">
-            <p class="kind">The zoo</p>
-            <h2>A baby elephant at the National Zoo</h2>
-            <p>
-              Charlotte's visit with the baby elephant and a closer look at the
-              people who care for zoo animals.
-            </p>
-            <span class="go">Open story</span>
-          </a>
-          <a class="place tone-honey" href="../stories/puppies/">
-            <p class="kind">Home</p>
-            <h2>Meet the puppies</h2>
-            <p>
-              Follow three tiny puppies as they grow, play, and discover the
-              world around them.
-            </p>
-            <span class="go">Open story</span>
-          </a>
-        </div>
+      </header>
+      <div class="place-list">
+        <article class="place place-barn" id="barn">
+          <div class="inner place-grid">
+            <figure>
+              <img
+                src="../assets/art/horse-barn.jpg"
+                width="1248"
+                height="832"
+                alt="Illustration of a chestnut horse standing in a wooden barn."
+              />
+              <figcaption>Illustrative artwork.</figcaption>
+            </figure>
+            <div>
+              <p class="eyebrow">The barn</p>
+              <h2>With the horses</h2>
+              <p>
+                Horses, a trainer, and a visit to check on Crispy. This is
+                where Charlotte’s conversation with Martha Wunder takes place.
+              </p>
+              <a class="text-link" href="../stories/martha-wunder/">Martha Wunder’s story</a>
+            </div>
+          </div>
+        </article>
+        <article class="place place-zoo" id="zoo">
+          <div class="inner place-grid">
+            <figure>
+              <img
+                src="../assets/art/baby-elephant.jpg"
+                width="1248"
+                height="832"
+                alt="Illustration of a young elephant standing in a leafy grove."
+              />
+              <figcaption>Illustrative artwork.</figcaption>
+            </figure>
+            <div>
+              <p class="eyebrow">The zoo</p>
+              <h2>The National Zoo</h2>
+              <p>
+                Charlotte went to see a baby elephant and to notice the people
+                who care for the animals there.
+              </p>
+              <a class="text-link" href="../stories/baby-elephant/">The baby elephant story</a>
+            </div>
+          </div>
+        </article>
+        <article class="place place-home" id="home">
+          <div class="inner place-grid">
+            <figure>
+              <img
+                src="../assets/art/puppies.jpg"
+                width="1248"
+                height="832"
+                alt="Illustration of three puppies resting together by a window."
+              />
+              <figcaption>Illustrative artwork.</figcaption>
+            </figure>
+            <div>
+              <p class="eyebrow">At home</p>
+              <h2>Where the puppies live</h2>
+              <p>
+                Three very young puppies are growing and playing here. Their
+                names will be added with Charlotte’s photos.
+              </p>
+              <a class="text-link" href="../stories/puppies/">The puppies’ story</a>
+            </div>
+          </div>
+        </article>
       </div>
     </main>
     <footer class="foot">
       <div class="inner foot-inner">
         <div>
-          <p class="foot-name">Charlotte's Pet Podcast</p>
-          <p class="sub">A growing collection of animal stories.</p>
+          <p class="foot-name">Charlotte’s Pet Podcast</p>
+          <p class="blurb">
+            Charlotte’s questions for the people who care for animals, and the
+            animals she meets along the way.
+          </p>
         </div>
         <nav class="nav" aria-label="Footer">
           <a href="../">Home</a>
           <a href="../stories/">Stories</a>
           <a href="./" aria-current="page">Places</a>
-          <a href="../lemonade/">Lemonade</a>
+          <a href="../lemonade/">Lemonade Society</a>
           <a href="../about/">About Charlotte</a>
         </nav>
       </div>
     </footer>
+    <script src="../assets/site.js"></script>
   </body>
 </html>

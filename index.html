@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Charlotte's Pet Podcast</title>
+    <title>Charlotte’s Pet Podcast</title>
     <meta
       name="description"
-      content="Join Charlotte as she talks with the people who care for animals and shares the creatures she meets along the way, from the barn to the zoo to her own home."
+      content="Join Charlotte as she meets animals and the people who care for them—from the barn to the zoo to her own home."
     />
-    <meta property="og:title" content="Charlotte's Pet Podcast" />
+    <meta property="og:title" content="Charlotte’s Pet Podcast" />
     <meta
       property="og:description"
-      content="A growing collection of animal stories. Big questions. Little paws."
+      content="Animals, adventures, and big questions. Big questions. Little paws."
     />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#f3eee6" />
@@ -22,145 +22,189 @@
     <a class="skip" href="#content">Skip to content</a>
     <header class="mast">
       <div class="inner mast-inner">
-        <div class="brand-block">
-          <a class="brand" href="./">Charlotte's Pet Podcast</a>
-          <p class="tag">A growing collection of animal stories.</p>
-        </div>
-        <nav class="nav" aria-label="Site">
+        <a class="brand" href="./">Charlotte’s Pet Podcast</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="nav-toggle-open">Menu</span>
+          <span class="nav-toggle-close">Close</span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Site">
           <a href="./" aria-current="page">Home</a>
           <a href="stories/">Stories</a>
           <a href="places/">Places</a>
-          <a href="lemonade/">Lemonade</a>
+          <a href="lemonade/">Lemonade Society</a>
           <a href="about/">About Charlotte</a>
         </nav>
       </div>
     </header>
     <main id="content" tabindex="-1">
-      <section class="hero">
-        <div class="inner">
-          <p class="kicker">Curious about animals</p>
-          <h1>Big questions.<br /><em>Little paws.</em></h1>
-          <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="lede">
-              Join Charlotte as she talks with the people who care for animals
-              and shares the creatures she meets along the way — from the barn
-              to the zoo to her own home.
-            </p>
-            <div class="actions">
-              <a class="btn" href="stories/">Stories</a>
-              <a class="btn btn-quiet" href="about/">About Charlotte</a>
-            </div>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-media">
+          <div class="hero-extend" aria-hidden="true">
+            <img src="assets/charlotte-porch.jpg" alt="" />
           </div>
-          <figure class="hero-photos">
+          <img
+            class="hero-subject"
+            src="assets/charlotte-porch.jpg"
+            width="923"
+            height="1230"
+            alt="Charlotte standing on a brick porch and smiling at the camera."
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Animals, adventures &amp; big questions</p>
+          <h1 id="hero-heading">Big questions.<br />Little paws.</h1>
+          <p class="lede">
+            Join Charlotte as she meets animals and the people who care for
+            them—from the barn to the zoo to her own home.
+          </p>
+          <div class="actions">
+            <a class="btn" href="stories/">Explore the stories</a>
+            <a class="text-link" href="about/">Meet Charlotte</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section home-stories" aria-labelledby="stories-heading">
+        <div class="inner">
+          <header class="section-head">
+            <div>
+              <h2 id="stories-heading">Stories</h2>
+              <p>
+                Charlotte’s first stories follow horses at the barn, a baby
+                elephant at the National Zoo, and three puppies at home.
+              </p>
+            </div>
+            <a class="text-link" href="stories/">All stories</a>
+          </header>
+          <div class="story-grid">
+            <a class="story-card" href="stories/martha-wunder/">
+              <img
+                src="assets/art/horse-barn.jpg"
+                width="1248"
+                height="832"
+                alt="Illustration of a chestnut horse standing in a wooden barn."
+              />
+              <p class="art-note">Illustrative artwork.</p>
+              <p class="eyebrow">Horse training</p>
+              <h3>Meet horse trainer Martha Wunder</h3>
+              <p class="sum">
+                Charlotte is talking with Martha Wunder about working with
+                horses. The story includes her visit to check on Crispy.
+              </p>
+              <p class="status">Story in progress</p>
+              <span class="text-link">Read the story</span>
+            </a>
+            <a class="story-card" href="stories/baby-elephant/">
+              <img
+                src="assets/art/baby-elephant.jpg"
+                width="1248"
+                height="832"
+                alt="Illustration of a young elephant standing in a leafy grove."
+              />
+              <p class="art-note">Illustrative artwork.</p>
+              <p class="eyebrow">The zoo</p>
+              <h3>A baby elephant at the National Zoo</h3>
+              <p class="sum">
+                Charlotte visited the National Zoo to see a baby elephant and
+                learn about the people who care for the animals.
+              </p>
+              <p class="status">Story in progress</p>
+              <span class="text-link">Read the story</span>
+            </a>
+            <a class="story-card" href="stories/puppies/">
+              <img
+                src="assets/art/puppies.jpg"
+                width="1248"
+                height="832"
+                alt="Illustration of three puppies resting together by a window."
+              />
+              <p class="art-note">Illustrative artwork.</p>
+              <p class="eyebrow">At home</p>
+              <h3>Meet the puppies</h3>
+              <p class="sum">
+                Three very young puppies at home, growing and playing as they
+                discover what is around them.
+              </p>
+              <p class="status">Story in progress</p>
+              <span class="text-link">Read the story</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section meet" aria-labelledby="about-heading">
+        <div class="inner meet-grid">
+          <figure class="portrait">
             <img
-              class="shot-portrait"
               src="assets/charlotte-porch.jpg"
               width="923"
               height="1230"
-              alt="Charlotte on a brick porch, holding a poster that says I survived Bella and a shirt in a sleeve."
-            />
-            <img
-              src="assets/heels-down.jpg"
-              width="923"
-              height="616"
-              alt="Illustrated pages titled Heels Down and No Complaints: a rider with her horse, a lesson, and two huskies."
-            />
-            <img
-              src="assets/riding-scenes.jpg"
-              width="923"
-              height="616"
-              alt="Nine illustrated scenes of riding lessons, a jump, and time with the horses and dogs."
+              alt="Charlotte standing on a brick porch and smiling at the camera."
             />
           </figure>
-          </div>
-        </div>
-      </section>
-      <section class="panel" aria-labelledby="stories-heading">
-        <div class="inner">
-          <div class="section-head">
-            <h2 id="stories-heading">Stories</h2>
-            <a href="stories/">All stories</a>
-          </div>
-          <div class="cards">
-            <a class="card tone-clay" href="stories/martha-wunder/">
-              <p class="kind">Interview · Horse training</p>
-              <h3>Meet horse trainer Martha Wunder</h3>
-              <p class="sum">
-                Charlotte's conversation with a horse trainer about working
-                with horses, including her visit to check on Crispy.
-              </p>
-              <span class="go">Open story</span>
-            </a>
-            <a class="card tone-teal" href="stories/baby-elephant/">
-              <p class="kind">Field notes · Wildlife</p>
-              <h3>A baby elephant at the National Zoo</h3>
-              <p class="sum">
-                Charlotte's visit with the baby elephant and a closer look at
-                the people who care for zoo animals.
-              </p>
-              <span class="go">Open story</span>
-            </a>
-            <a class="card tone-honey" href="stories/puppies/">
-              <p class="kind">At home · Puppies</p>
-              <h3>Meet the puppies</h3>
-              <p class="sum">
-                Follow three tiny puppies as they grow, play, and discover the
-                world around them.
-              </p>
-              <span class="go">Open story</span>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="feature" aria-labelledby="lemonade-heading">
-        <div class="inner feature-grid">
           <div>
-            <p class="kicker">Washington, DC area</p>
-            <h2 id="lemonade-heading">The Lemonade<br /><em>Society</em></h2>
-          </div>
-          <div class="feature-copy">
-            <p>
-              Charlotte is a mini co-CEO of The Lemonade Society, with Hendrik,
-              in the Washington, DC area. It is part of the LiTEArary Society
-              and works to promote a lifelong love of books among
-              preschool-aged children in disadvantaged communities.
-            </p>
-            <a class="btn" href="lemonade/">The Lemonade Society</a>
-          </div>
-        </div>
-      </section>
-      <section class="band" aria-labelledby="about-heading">
-        <div class="inner band-grid">
-          <div>
-            <h2 id="about-heading">About Charlotte</h2>
+            <h2 id="about-heading">Meet Charlotte</h2>
             <blockquote>
-              <p>
-                Hi, I'm Charlotte. I love animals and I love asking questions.
-                On this podcast, I want to meet veterinarians, trainers, and
-                other animal experts to learn what their days are like and how
-                they help the animals we care about.
-              </p>
+              <p>Hi, I’m Charlotte. I love animals and I love asking questions.</p>
             </blockquote>
+            <p class="follow">
+              She wants to meet veterinarians, trainers, and other animal
+              experts, and to share the animals she meets along the way.
+            </p>
+            <a class="text-link" href="about/">About Charlotte</a>
           </div>
-          <a class="btn" href="about/">About Charlotte</a>
+        </div>
+      </section>
+
+      <section class="section lemonade-home" aria-labelledby="lemonade-heading">
+        <div class="inner band-grid">
+          <figure class="page-art">
+            <img
+              src="assets/art/lemonade-books.jpg"
+              width="1248"
+              height="832"
+              alt="Illustration of two books and a lemon on a wooden table."
+            />
+            <figcaption>Illustrative artwork.</figcaption>
+          </figure>
+          <div>
+            <p class="eyebrow">Also in Charlotte’s life</p>
+            <h2 id="lemonade-heading">The Lemonade Society</h2>
+            <p class="follow">
+              Charlotte and Hendrik are co-founders and mini co-CEOs of The
+              Lemonade Society in the Washington, DC area. It is part of The
+              LiTEArary Society, Inc., and it supports a lifelong love of books
+              among preschool-aged children in disadvantaged communities.
+            </p>
+            <a class="btn btn-secondary" href="lemonade/">The Lemonade Society</a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="foot">
       <div class="inner foot-inner">
         <div>
-          <p class="foot-name">Charlotte's Pet Podcast</p>
-          <p class="sub">A growing collection of animal stories.</p>
+          <p class="foot-name">Charlotte’s Pet Podcast</p>
+          <p class="blurb">
+            Charlotte’s questions for the people who care for animals, and the
+            animals she meets along the way.
+          </p>
         </div>
         <nav class="nav" aria-label="Footer">
           <a href="./" aria-current="page">Home</a>
           <a href="stories/">Stories</a>
           <a href="places/">Places</a>
-          <a href="lemonade/">Lemonade</a>
+          <a href="lemonade/">Lemonade Society</a>
           <a href="about/">About Charlotte</a>
         </nav>
       </div>
     </footer>
+    <script src="assets/site.js"></script>
   </body>
 </html>
