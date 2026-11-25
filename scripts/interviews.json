@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "at-the-barn",
+    "title": "A Conversation at the Barn",
+    "coverAlt": "A group with notebooks speaks with an adult inside a wood-paneled barn",
+    "duration": "5:15",
+    "description": "Inside the barn, Charlotte and the group bring their notes into a conversation in a wood-paneled room."
+  },
+  {
+    "slug": "by-the-paddock",
+    "title": "By the Paddock",
+    "coverAlt": "A group with notes talks with an adult beside a fenced paddock",
+    "duration": "0:56",
+    "description": "The group takes the conversation outside, gathering with their questions beside a paddock gate."
+  },
+  {
+    "slug": "along-the-fence",
+    "title": "Along the Fence",
+    "coverAlt": "A group looks through notes beside a fence while an adult looks on",
+    "duration": "0:39",
+    "description": "Beside the fence, the group looks over their notes together as the conversation continues outdoors."
+  }
+]

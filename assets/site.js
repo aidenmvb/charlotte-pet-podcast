@@ -3,7 +3,14 @@
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
 
+  if (header && document.querySelector(".hero") && "ResizeObserver" in window) {
+    new ResizeObserver(function () {
+      document.documentElement.style.setProperty("--mast-height", header.offsetHeight + "px");
+    }).observe(header);
+  }
+
   if (header && toggle && nav) {
+    document.documentElement.classList.add("nav-ready");
     toggle.addEventListener("click", function () {
       var open = header.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
@@ -25,28 +32,4 @@
     });
   }
 
-  var buttons = document.querySelectorAll("[data-copy-link]");
-  buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      var url = window.location.href;
-      var status = button.nextElementSibling;
-
-      function report(message) {
-        if (status) status.textContent = message;
-      }
-
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(url).then(
-          function () {
-            report("Copied.");
-          },
-          function () {
-            report("Copy did not work. Use the address at the top of the browser.");
-          }
-        );
-      } else {
-        report("Copy did not work. Use the address at the top of the browser.");
-      }
-    });
-  });
 })();
